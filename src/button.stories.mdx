@@ -1,0 +1,33 @@
+import { Meta, Story, Props } from '@storybook/addon-docs/blocks';
+import HButton from './components/HButton.vue';
+
+![button](/public/undraw_design_components_9vy6.svg)
+
+<Meta title='HButton' component={HButton} />
+
+# HButton
+
+This is **HButton** component description
+
+<Story name='primary' height='50px'>{{
+  components: { HButton },
+  template: '<h-button type="warning">Button</h-button>'
+}}</Story>
+
+```
+<h-button type="warning">Button</h-button>
+```
+
+
+<Story name='success' height='50px'>{{
+  components: { HButton },
+  template: '<h-button type="success" icon="">Button</h-button>'
+}}</Story>
+
+```
+<h-button type="success">Button</h-button>
+```
+
+## Props
+
+<Props of={HButton} />
