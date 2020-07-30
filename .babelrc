@@ -4,5 +4,8 @@
       "useBuiltIns": false,
       "jsx": false
     }
-  ]]
+  ]],
+  "plugins": [
+    "@babel/plugin-transform-arrow-functions"
+  ]
 }
