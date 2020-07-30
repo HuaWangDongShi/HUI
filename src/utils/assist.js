@@ -38,9 +38,9 @@ export const fontSizeMap = {
 export function oneOfCl(value, size) {
   const paddingCls = getPaddingCls(size);
   if (value === 'default') {
-    return `${prefixCls}-bg-white ${prefixCls}-text-black ${prefixCls}-border-color ${paddingCls}`;
+    return `${prefixCls}-bg-white ${prefixCls}-text-black ${prefixCls}-border-color focus:${prefixCls}-outline-none ${paddingCls}`;
   }
-  return `${prefixCls}-bg-${value}-${500} hover:${prefixCls}-bg-${value}-${400} focus:${prefixCls}-bg-${value}-${400} ${prefixCls}-text-white ${prefixCls}-transition ${prefixCls}-duration-${100} ${prefixCls}-ease-in  ${paddingCls}`;
+  return `${prefixCls}-bg-${value}-${500} hover:${prefixCls}-bg-${value}-${400} focus:${prefixCls}-bg-${value}-${400} ${prefixCls}-text-white ${prefixCls}-transition ${prefixCls}-duration-${100} ${prefixCls}-ease-in  focus:${prefixCls}-outline-none  ${paddingCls}`;
 }
 
 export function getPaddingCls(size) {

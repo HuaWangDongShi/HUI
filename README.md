@@ -2,11 +2,12 @@
 # HUI
 
 An enterprise-class UI design language and Vue UI library.
+
 [![Build Status](https://travis-ci.org/HuaNet/HUI.svg?branch=master)](https://travis-ci.org/HuaNet/HUI)
 [![npm version](https://badge.fury.io/js/%40huanet%2Fhui.svg)](https://badge.fury.io/js/%40huanet%2Fhui)
 [![Downloads](https://img.shields.io/npm/dm/@huanet/hui.svg)](https://www.npmjs.com/package/@huanet/hui)
 [![License](https://img.shields.io/npm/l/@huanet/hui.svg)](https://www.npmjs.com/package/@huanet/hui)
-
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
 | Project | Status | Description |
 |---------|--------|-------------|

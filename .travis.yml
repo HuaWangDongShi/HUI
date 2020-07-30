@@ -16,5 +16,4 @@ jobs:
         skip_cleanup: true
         script:
           - npx semantic-release
-          - echo "41e82ad0-b477-48d3-86e1-8f322ebc73db" > .cc_token
-          - bash <(curl -s https://codecov.io/bash) -t @.cc_token
+          - bash <(curl -s https://codecov.io/bash)
