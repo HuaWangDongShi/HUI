@@ -24,11 +24,11 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
 })
 
 
-
 const webpackConfig = {
+  mode: 'development',
   devtool: '#inline-source-map',
-  module:{
-    rules:[
+  module: {
+    rules: [
       {
         test: /\.vue$/,
         loader: 'vue-loader'
@@ -104,7 +104,7 @@ const webpackConfig = {
   plugins: [
     new VueLoaderPlugin()
   ],
-  node:{
+  node: {
     fs: 'empty'
   }
 };
