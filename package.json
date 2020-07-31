@@ -20,7 +20,7 @@
     "release-major": "standard-version --release-as major",
     "release-minor": "standard-version --release-as minor",
     "semantic-release": "semantic-release",
-    "unit": "karma start karma.conf.js --single-run"
+    "test": "karma start karma.conf.js --single-run && exit 0"
   },
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^2.3.0",
