@@ -82,6 +82,7 @@
     "karma": "^5.1.1",
     "karma-chrome-launcher": "^3.1.0",
     "karma-coverage": "^2.0.2",
+    "karma-es6-shim": "^1.0.0",
     "karma-mocha": "^2.0.1",
     "karma-phantomjs-launcher": "^1.0.4",
     "karma-phantomjs-launcher2": "^1.0.3",
