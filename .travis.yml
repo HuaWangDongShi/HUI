@@ -14,5 +14,6 @@ jobs:
         provider: script
         skip_cleanup: true
         script:
+          - karma start karma.conf.js --single-run
           - npx semantic-release
           - bash <(curl -s https://codecov.io/bash)
