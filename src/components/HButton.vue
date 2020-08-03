@@ -1,23 +1,23 @@
 <template>
   <button :class="classes">
-    <HIcon :type="type" :icon="icon"/>
+    <HIcon :type="size" :icon="icon"/>
     <slot/>
   </button>
 </template>
 
 <script>
-  import HIcon from './HIcon';
-  import {oneOfCl,nameMap} from '../utils/assist';
+  import HIcon from './HIcon.vue';
+  import {oneOfCl, nameMap} from '../utils/assist';
 
   export default {
     name: 'HButton',
-    components:{
+    components: {
       HIcon
     },
     props: {
       type: {
         type: String,
-        default: 'default'
+        default: 'primary'
       },
       size: {
         type: String,
@@ -39,8 +39,11 @@
     computed: {
       classes() {
         const name = nameMap[this.type];
-        return oneOfCl(name,this.size)
+        return oneOfCl(name, this.size)
       }
+    },
+    methods: {
+
     }
   }
 </script>
