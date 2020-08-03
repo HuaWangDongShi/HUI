@@ -14,5 +14,5 @@ jobs:
         provider: script
         skip_cleanup: true
         script:
+          - codecov ./coverage/
           - npx semantic-release
-          - bash <(curl -s https://codecov.io/bash)
