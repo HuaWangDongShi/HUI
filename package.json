@@ -20,7 +20,7 @@
     "release-major": "standard-version --release-as major",
     "release-minor": "standard-version --release-as minor",
     "semantic-release": "semantic-release",
-    "test": "karma start karma.conf.js --single-run"
+    "test": "cross-env NODE_ENV=test karma start karma.conf.js --single-run"
   },
   "dependencies": {
     "@storybook/addon-a11y": "^5.3.19",

@@ -1,7 +1,6 @@
 // Karma configuration
 // Generated on Thu Jul 30 2020 17:14:05 GMT+0800 (GMT+08:00)
 const webConfig = require('./webpack.test');
-const path = require('path');
 module.exports = function (config) {
   config.set({
 
@@ -13,7 +12,7 @@ module.exports = function (config) {
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
     frameworks: ['mocha', 'chai', 'sinon-chai', 'es6-shim', 'phantomjs-shim'],
 
-    plugins: ['karma-mocha-reporter','karma-coverage-istanbul-reporter','karma-es6-shim', 'karma-chai', 'karma-spec-reporter', 'karma-sourcemap-loader', 'karma-phantomjs-launcher2', 'karma-webpack', 'karma-coverage', 'karma-mocha', 'karma-phantomjs-shim', 'karma-sinon-chai'],
+    plugins: ['karma-es6-shim', 'karma-chai', 'karma-spec-reporter', 'karma-sourcemap-loader', 'karma-phantomjs-launcher2', 'karma-webpack', 'karma-coverage', 'karma-mocha', 'karma-phantomjs-shim', 'karma-sinon-chai'],
     // list of files / patterns to load in the browser
     files: [
       // {pattern: 'src/components/*.vue', watched: false},
@@ -32,7 +31,7 @@ module.exports = function (config) {
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
       // 'src/components/*.vue': ['webpack', 'sourcemap'],
-      'test/**/*.spec.js': ['webpack', 'sourcemap'],
+      'test/**/*.spec.js': ['coverage', 'webpack', 'sourcemap']
       // '**/*.vue': ['webpack', 'sourcemap'],
       // 'test/index.js': ['webpack', 'sourcemap'],
     },
@@ -48,7 +47,7 @@ module.exports = function (config) {
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['spec','mocha', 'coverage-istanbul'],
+    reporters: ['spec', 'coverage'],
 
 
     // web server port
@@ -72,14 +71,9 @@ module.exports = function (config) {
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
     browsers: ['PhantomJS'],
 
-    coverageIstanbulReporter: {
-      reports: ['html', 'lcovonly', 'text-summary'],
-      // /%browser%/可实现调用不同浏览器测试时分别计算代码覆盖率
-      dir: path.join(__dirname, 'coverage'),
-      fixWebpackSourcePaths: true,
-      'report-config': {
-        html: { outdir: 'html' }
-      }
+    coverageReporter: {
+      dir: './coverage',
+      reporters: [{type: 'lcov', subdir: '.'}, {type: 'text-summary'}]
     },
 
     // Continuous Integration mode

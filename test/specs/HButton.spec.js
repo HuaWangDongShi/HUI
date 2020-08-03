@@ -1,13 +1,25 @@
 import { mount } from '@vue/test-utils'
 import HButton from '@/components/HButton'
-const wrapper = mount(HButton, {
-  propsData: {
-    type: 'primary'
-  }
-});
+
+function componentWrapper(component,props){
+  let wrapper = mount(component);
+  wrapper.setProps(props.propsData);
+  return wrapper;
+}
 
 describe('HButton', () => {
   it('props type', () => {
-    expect(wrapper.props().type).equal('primary')
+    expect(componentWrapper(HButton,{
+      propsData: {
+        type: 'success'
+      }
+    }).vm.type).equal('success')
+  })
+  it('props size', () => {
+    expect(componentWrapper(HButton,{
+      propsData: {
+        size: 'small'
+      }
+    }).vm.size).equal('small')
   })
 });

@@ -21,19 +21,19 @@
       },
       size: {
         type: String,
-        default: 'middle'
+        default: 'middle',
       },
       block: {
         type: Boolean,
-        default: false
+        default: false,
       },
       icon: {
         type: String,
-        default: null
+        default: null,
       },
       disabled: {
         type: Boolean,
-        default: false
+        default: false,
       },
     },
     computed: {
