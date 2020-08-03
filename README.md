@@ -55,7 +55,7 @@ Detailed changes for each release are documented in the [release notes](https://
 
 ## License
 
-[MIT](https://github.com/HuaNet/HUI/LICENSE)
+[MIT](https://github.com/HuaNet/HUI/blob/master/LICENSE)
 
 Copyright (c) 2020-present WangZhe
 

@@ -1,4 +1,4 @@
-const prefixCls = 'h'
+export const prefixCls = 'h'
 
 export const nameMap = {
   primary: 'blue',
