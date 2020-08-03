@@ -4,6 +4,7 @@
 An enterprise-class UI design language and Vue UI library.
 
 [![Build Status](https://travis-ci.org/HuaNet/HUI.svg?branch=master)](https://travis-ci.org/HuaNet/HUI)
+[![codecov](https://codecov.io/gh/HuaNet/HUI/branch/master/graph/badge.svg)](https://codecov.io/gh/HuaNet/HUI)
 [![npm version](https://badge.fury.io/js/%40huanet%2Fhui.svg)](https://badge.fury.io/js/%40huanet%2Fhui)
 [![Downloads](https://img.shields.io/npm/dm/@huanet/hui.svg)](https://www.npmjs.com/package/@huanet/hui)
 [![License](https://img.shields.io/npm/l/@huanet/hui.svg)](https://www.npmjs.com/package/@huanet/hui)
