@@ -1,12 +1,14 @@
 language: node_js
 
 node_js:
-  - 11
+  - 8
+  - 6
 
 jobs:
   include:
     # Define the release stage that runs semantic-release
     - stage: release
+      node_js: lts/*
     # node_js: 10
       # Advanced: optionally overwrite your default `script` step to skip the tests
       # script: skip
@@ -14,5 +16,5 @@ jobs:
         provider: script
         skip_cleanup: true
         script:
-          - codecov ./coverage/
           - npx semantic-release
+          - codecov ./coverage/
