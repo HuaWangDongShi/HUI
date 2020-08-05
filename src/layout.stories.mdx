@@ -1,0 +1,41 @@
+import { Meta, Story, Props } from '@storybook/addon-docs/blocks';
+import HRow from './components/HRow.vue';
+import HCol from './components/HCol.vue';
+
+![button](/public/undraw_grid_design_obmd.svg)
+
+<Meta title='Layout' components={HRow,HCol} />
+
+# Layout
+
+This is **Layout** component description
+
+<Story name='HRow' height='50px'>{{
+  components: { HRow },
+  template: '<h-row align="top" justify="start">HRow</h-row>'
+}}</Story>
+
+```
+<h-row align="top" justify="start">HRow</h-row>
+```
+
+<Story name='HCol' height='50px'>{{
+  components: { HCol },
+  template: '<h-row align="top" justify="start"><h-col :sm="8" :md="8" :lg="8" :xl="8">HCol</h-col></h-row>'
+}}</Story>
+
+```
+<h-row align="top" justify="start">
+  <h-col :sm="8" :md="8" :lg="8" :xl="8">HCol</h-col>
+</h-row>
+```
+
+
+
+## Props
+
+# HRow
+<Props of={HRow} />
+
+# HCol
+<Props of={HCol} />

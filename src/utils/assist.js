@@ -1,5 +1,11 @@
 export const prefixCls = 'h'
 
+export function fieldType(field) {
+  const T = {}.toString.call(field);
+  return T;
+}
+
+
 export const nameMap = {
   primary: 'blue',
   success: 'green',

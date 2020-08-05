@@ -1,5 +1,5 @@
 <template>
-  <div class="container" :class="classes">
+  <div :class="classes">
     <slot/>
   </div>
 </template>
@@ -11,6 +11,7 @@
     data() {
       return {}
     },
+    name: "HRow",
     props: {
       align: {
         type: String,
