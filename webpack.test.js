@@ -23,7 +23,6 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
   }
 })
 
-
 const webpackConfig = {
   mode: 'development',
   devtool: '#inline-source-map',
@@ -109,7 +108,7 @@ const webpackConfig = {
     }
   },
   plugins: [
-    new VueLoaderPlugin()
+    new VueLoaderPlugin(),
   ],
   node: {
     fs: 'empty'

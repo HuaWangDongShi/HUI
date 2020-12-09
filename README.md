@@ -9,6 +9,8 @@ An enterprise-class UI design language and Vue UI library.
 [![Downloads](https://img.shields.io/npm/dm/@huanet/hui.svg)](https://www.npmjs.com/package/@huanet/hui)
 [![License](https://img.shields.io/npm/l/@huanet/hui.svg)](https://www.npmjs.com/package/@huanet/hui)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
+[![Join the community on Spectrum](https://withspectrum.github.io/badge/badge.svg)](https://spectrum.chat/huanet)
+
 
 | Project | Status | Description |
 |---------|--------|-------------|
@@ -59,3 +61,6 @@ Detailed changes for each release are documented in the [release notes](https://
 
 Copyright (c) 2020-present WangZhe
 
+## Join Us
+
+<a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=ajdDGtpYzaBv31FLgn9hZfhns0jqYFqz&jump_from=webapi"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="HuaNet开源组织交流群" title="HuaNet开源组织交流群"></a>

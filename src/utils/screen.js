@@ -26,7 +26,26 @@ function colOfSizeCls() {
     arr = [];
   while (typeof (t = colSizeType(v = (arguments[arguments.length - 1][(name = arguments[c])]), name)) === "string") {
     if (t !== "null") {
-      arr.push(`${name}:${prefixCls}-w-${v}`);
+      switch (parseInt(v)) {
+        case 2:
+          arr.push(`${name}:${prefixCls}-w-1/12`);
+          break;
+        case 4:
+          arr.push(`${name}:${prefixCls}-w-2/12`);
+          break;
+        case 6:
+          arr.push(`${name}:${prefixCls}-w-3/12`);
+          break;
+        case 8:
+          arr.push(`${name}:${prefixCls}-w-4/12`);
+          break;
+        case 10:
+          arr.push(`${name}:${prefixCls}-w-5/12`);
+          break;
+        case 12:
+          arr.push(`${name}:${prefixCls}-w-6/12`);
+          break;
+      }
     }
     c++;
     if (c === arguments.length - 1) {
@@ -53,7 +72,7 @@ function colSizeType(col, name) {
 }
 
 export function screen(alignType, justifyType) {
-  return `${prefixCls}-container ${prefixCls}-flex ${align(alignType)} ${justify(justifyType)}`
+  return `${prefixCls}-container  sm:${prefixCls}-container md:${prefixCls}-container lg:${prefixCls}-container xl:${prefixCls}-container ${prefixCls}-flex ${align(alignType)} ${justify(justifyType)}`
 }
 
 export function align(type) {
