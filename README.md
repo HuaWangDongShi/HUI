@@ -60,7 +60,3 @@ Detailed changes for each release are documented in the [release notes](https://
 [MIT](https://github.com/HuaNet/HUI/blob/master/LICENSE)
 
 Copyright (c) 2020-present WangZhe
-
-## Join Us
-
-<a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=ajdDGtpYzaBv31FLgn9hZfhns0jqYFqz&jump_from=webapi"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="HuaNet开源组织交流群" title="HuaNet开源组织交流群"></a>
