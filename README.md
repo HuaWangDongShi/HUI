@@ -5,11 +5,11 @@ An enterprise-class UI design language and Vue UI library.
 
 [![Build Status](https://travis-ci.org/HuaWangDongShi/HUI.svg?branch=master)](https://travis-ci.org/HuaWangDongShi/HUI)
 [![codecov](https://codecov.io/gh/HuaWangDongShi/HUI/branch/master/graph/badge.svg)](https://codecov.io/gh/HuaWangDongShi/HUI)
-[![npm version](https://badge.fury.io/js/%40huanet%2Fhui.svg)](https://badge.fury.io/js/%40huanet%2Fhui)
+[![npm version](https://badge.fury.io/js/%40huawangdongshi%2Fhui.svg)](https://badge.fury.io/js/%40huawangdongshi%2Fhui)
 [![Downloads](https://img.shields.io/npm/dm/@huawangdongshi/hui.svg)](https://www.npmjs.com/package/@huawangdongshi/hui)
 [![License](https://img.shields.io/npm/l/@huawangdongshi/hui.svg)](https://www.npmjs.com/package/@huawangdongshi/hui)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
-[![Join the community on Spectrum](https://withspectrum.github.io/badge/badge.svg)](https://spectrum.chat/huanet)
+[![Join the community on Spectrum](https://withspectrum.github.io/badge/badge.svg)](https://spectrum.chat/huawangdongshi)
 
 
 | Project | Status | Description |
