@@ -3,11 +3,11 @@
 
 An enterprise-class UI design language and Vue UI library.
 
-[![Build Status](https://travis-ci.org/HuaNet/HUI.svg?branch=master)](https://travis-ci.org/HuaNet/HUI)
-[![codecov](https://codecov.io/gh/HuaNet/HUI/branch/master/graph/badge.svg)](https://codecov.io/gh/HuaNet/HUI)
+[![Build Status](https://travis-ci.org/HuaWangDongShi/HUI.svg?branch=master)](https://travis-ci.org/HuaWangDongShi/HUI)
+[![codecov](https://codecov.io/gh/HuaWangDongShi/HUI/branch/master/graph/badge.svg)](https://codecov.io/gh/HuaWangDongShi/HUI)
 [![npm version](https://badge.fury.io/js/%40huanet%2Fhui.svg)](https://badge.fury.io/js/%40huanet%2Fhui)
-[![Downloads](https://img.shields.io/npm/dm/@huanet/hui.svg)](https://www.npmjs.com/package/@huanet/hui)
-[![License](https://img.shields.io/npm/l/@huanet/hui.svg)](https://www.npmjs.com/package/@huanet/hui)
+[![Downloads](https://img.shields.io/npm/dm/@huawangdongshi/hui.svg)](https://www.npmjs.com/package/@huawangdongshi/hui)
+[![License](https://img.shields.io/npm/l/@huawangdongshi/hui.svg)](https://www.npmjs.com/package/@huawangdongshi/hui)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 [![Join the community on Spectrum](https://withspectrum.github.io/badge/badge.svg)](https://spectrum.chat/huanet)
 
@@ -40,7 +40,7 @@ An enterprise-class UI design language and Vue UI library.
 
 ## 📦 Install
 
-[![NPM](https://nodei.co/npm/@huanet/hui.png)](https://www.npmjs.com/package/@huanet/hui)
+[![NPM](https://nodei.co/npm/@huawangdongshi/hui.png)](https://www.npmjs.com/package/@huawangdongshi/hui)
 
 ## 🔨 Usage
 
@@ -52,11 +52,11 @@ import { HButton } from 'hui';
 
 ## Changelog
 
-Detailed changes for each release are documented in the [release notes](https://github.com/HuaNet/HUI/releases).
+Detailed changes for each release are documented in the [release notes](https://github.com/HuaWangDongShi/HUI/releases).
 
 
 ## License
 
-[MIT](https://github.com/HuaNet/HUI/blob/master/LICENSE)
+[MIT](https://github.com/HuaWangDongShi/HUI/blob/master/LICENSE)
 
 Copyright (c) 2020-present WangZhe
