@@ -3,8 +3,10 @@ language: node_js
 node_js:
   - 11
   - 10
-
+before_script:
+  - npm run danger
 jobs:
+
   include:
     # Define the release stage that runs semantic-release
     - stage: release
