@@ -1,6 +1,7 @@
 module.exports = {
   purge: true,
-  target: 'relaxed',
+  darkMode: false,
+  // target: 'relaxed',
   prefix: 'h-',
   important: false,
   separator: ':',

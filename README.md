@@ -4,7 +4,7 @@
 An enterprise-class UI design language and Vue UI library.
 
 [![Build Status](https://travis-ci.org/HuaWangDongShi/HUI.svg?branch=master)](https://travis-ci.org/HuaWangDongShi/HUI)
-[![codecov](https://codecov.io/gh/HuaWangDongShi/HUI/branch/master/graph/badge.svg)](https://codecov.io/gh/HuaWangDongShi/HUI)
+[![codecov](https://codecov.io/gh/HuaWangDongShi/HUI/branch/master/graph/badge.svg?token=WH2PC5EYS4)](https://codecov.io/gh/HuaWangDongShi/HUI)
 [![npm version](https://badge.fury.io/js/%40huawangdongshi%2Fhui.svg)](https://badge.fury.io/js/%40huawangdongshi%2Fhui)
 [![Downloads](https://img.shields.io/npm/dm/@huawangdongshi/hui.svg)](https://www.npmjs.com/package/@huawangdongshi/hui)
 [![License](https://img.shields.io/npm/l/@huawangdongshi/hui.svg)](https://www.npmjs.com/package/@huawangdongshi/hui)
