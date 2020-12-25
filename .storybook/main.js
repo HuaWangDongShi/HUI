@@ -1,5 +1,6 @@
 const path = require('path');
-
+const tailwindConfig = require('../tailwind.config.js');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const purgecss = require('@fullhuman/postcss-purgecss')({
 
   // Specify the paths to all of the template files in your project
@@ -41,19 +42,27 @@ module.exports = {
     // Make whatever fine-grained changes you need
     config.module.rules.push({
       test: /\.css$/,
-      use: [
+      use: process.env.NODE_ENV === 'prod' ?[
+         {
+           loader: MiniCssExtractPlugin.loader
+         },{
+          loader: "css-loader",
+          options: {
+            importLoaders: 1,
+            modules: false,
+          },
+        },
         {
           loader: "postcss-loader",
-
           options: {
-            postcssOptions: (loader) =>{
+            postcssOptions: (loader) => {
               return {
                 ident: 'postcss',
                 plugins: [
-                 ['postcss-import',{root: loader.resourcePath}],
+                  ['postcss-import', {root: loader.resourcePath}],
                   'postcss-preset-env',
-                  'tailwindcss',
-                  ['cssnano',{
+                  ['tailwindcss', {config: './tailwind.config.js'}],
+                  ['cssnano', {
                     preset: 'default',
                   }],
                   // ...process.env.NODE_ENV === 'production'
@@ -61,21 +70,30 @@ module.exports = {
                   //   : []
                 ]
               }
-            },
-
+            }
           }
-
-          // options: {
-          //   importLoaders: 1,
-          //   modules: false,
-          //   /*Enable Source Maps*/
-          //   sourceMap: true,
-          //   /*Set postcss.config.js config path && ctx*/
-          //
-          //   config: {
-          //     path: "./.storybook/",
-          //   },
-          // },
+        },
+      ]:[
+        {
+          loader: "postcss-loader",
+          options: {
+            postcssOptions: (loader) => {
+              return {
+                ident: 'postcss',
+                plugins: [
+                  ['postcss-import', {root: loader.resourcePath}],
+                  'postcss-preset-env',
+                  ['tailwindcss', {config: './tailwind.config.js'}],
+                  ['cssnano', {
+                    preset: 'default',
+                  }],
+                  // ...process.env.NODE_ENV === 'production'
+                  //   ? [purgecss]
+                  //   : []
+                ]
+              }
+            }
+          }
         },
       ],
       include: path.resolve(__dirname, '../'),
@@ -84,7 +102,9 @@ module.exports = {
     config.node = {
       fs: 'empty'
     };
-
+    process.env.NODE_ENV === 'prod' && config.plugins.push(
+      new MiniCssExtractPlugin()
+    );
     // Return the altered config
     return config;
   },
