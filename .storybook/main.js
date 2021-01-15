@@ -25,6 +25,11 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
 
 module.exports = {
   webpackFinal: async (config, {configType}) => {
+    const entry = config.entry;
+    delete config.entry;
+    config.entry = {};
+    config.entry.index = entry;
+    config.output.filename = '[name].js';
     // `configType` has a value of 'DEVELOPMENT' or 'PRODUCTION'
     // You can change the configuration based on that.
     // 'PRODUCTION' is used when building the static version of storybook.
@@ -42,10 +47,10 @@ module.exports = {
     // Make whatever fine-grained changes you need
     config.module.rules.push({
       test: /\.css$/,
-      use: process.env.NODE_ENV === 'prod' ?[
-         {
-           loader: MiniCssExtractPlugin.loader
-         },{
+      use: process.env.NODE_ENV === 'prod' ? [
+        {
+          loader: MiniCssExtractPlugin.loader
+        }, {
           loader: "css-loader",
           options: {
             importLoaders: 1,
@@ -73,7 +78,7 @@ module.exports = {
             }
           }
         },
-      ]:[
+      ] : [
         {
           loader: "postcss-loader",
           options: {
@@ -103,7 +108,9 @@ module.exports = {
       fs: 'empty'
     };
     process.env.NODE_ENV === 'prod' && config.plugins.push(
-      new MiniCssExtractPlugin()
+      new MiniCssExtractPlugin({
+        filename: '[name].css'
+      })
     );
     // Return the altered config
     return config;

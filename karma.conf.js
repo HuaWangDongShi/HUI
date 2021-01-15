@@ -18,7 +18,7 @@ module.exports = function (config) {
       // {pattern: 'src/components/*.vue', watched: false},
       {pattern: 'test/**/*.spec.js', watched: false},
       // {pattern: 'test/**/*.spec.js', watched: false},
-      // {pattern: 'test/index.js', watched: false},
+      // {pattern: 'test/main.js', watched: false},
       // {pattern: 'src/components/*.vue', watched: false},
     ],
 
@@ -33,7 +33,7 @@ module.exports = function (config) {
       // 'src/components/*.vue': ['webpack', 'sourcemap'],
       'test/**/*.spec.js': ['coverage', 'webpack', 'sourcemap']
       // '**/*.vue': ['webpack', 'sourcemap'],
-      // 'test/index.js': ['webpack', 'sourcemap'],
+      // 'test/main.js': ['webpack', 'sourcemap'],
     },
 
     // client: {

@@ -35,11 +35,15 @@
         type: Boolean,
         default: false,
       },
+      outline:{
+        type:Boolean,
+        default: false,
+      }
     },
     computed: {
       classes() {
         const name = nameMap[this.type];
-        return oneOfCl(name, this.size)
+        return oneOfCl(name, this.size,this.outline)
       }
     },
     methods: {

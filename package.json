@@ -3,6 +3,7 @@
   "version": "0.0.0-development",
   "private": false,
   "license": "MIT",
+  "main": "src/index.js",
   "publishConfig": {
     "registry": "http://registry.npmjs.org/"
   },
@@ -14,7 +15,7 @@
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "start-storybook": "cross-env NODE_ENV=dev  start-storybook -s ./,./public",
-    "build-storybook": "cross-env NODE_ENV=prod  build-storybook -s ./public",
+    "build-storybook": "cross-env NODE_ENV=prod  build-storybook -s ./public -c .storybook -o ./dist",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
     "commitmsg": "validate-commit-msg",
     "release-major": "standard-version --release-as major",
@@ -82,6 +83,7 @@
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
     "cheerio": "^1.0.0-rc.3",
+    "clipboard": "^2.0.6",
     "codecov": "^3.7.2",
     "commitizen": "^4.1.2",
     "cross-env": "^7.0.2",

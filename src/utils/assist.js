@@ -11,7 +11,9 @@ export const nameMap = {
   success: 'green',
   warning: 'yellow',
   danger: 'red',
-  info: 'indigo'
+  info: 'indigo',
+  dark: 'black',
+  light: 'white'
 };
 
 export const sizeMap = {
@@ -36,15 +38,21 @@ export const sizeMap = {
 };
 
 export const fontSizeMap = {
-  small:`${prefixCls}-text-sm`,
-  middle:`${prefixCls}-text-lg`,
-  large:`${prefixCls}-text-xl`,
+  small: `${prefixCls}-text-sm`,
+  middle: `${prefixCls}-text-lg`,
+  large: `${prefixCls}-text-xl`,
 };
 
-export function oneOfCl(value, size) {
+export function oneOfCl(value, size, outline) {
   const paddingCls = getPaddingCls(size);
   if (value === 'default') {
+    if (outline) {
+      return `${prefixCls}-rounded ${prefixCls}-bg-white ${prefixCls}-border  ${prefixCls}-border-${value}  dark:${prefixCls}-bg-white ${prefixCls}-text-black dark:${prefixCls}-text-black ${prefixCls}-border-color focus:${prefixCls}-outline-none ${paddingCls}`;
+    }
     return `${prefixCls}-rounded ${prefixCls}-bg-white  dark:${prefixCls}-bg-white ${prefixCls}-text-black dark:${prefixCls}-text-black ${prefixCls}-border-color focus:${prefixCls}-outline-none ${paddingCls}`;
+  }
+  if (outline) {
+    return `${prefixCls}-rounded ${prefixCls}-bg-${value}-${500} ${prefixCls}-border  ${prefixCls}-border-${value}  dark:${prefixCls}-bg-${value}-${500} hover:${prefixCls}-bg-${value}-${600} dark:hover:${prefixCls}-bg-${value}-${600} focus:${prefixCls}-bg-${value}-${600} dark:focus:${prefixCls}-bg-${value}-${600} ${prefixCls}-text-${value} dark:${prefixCls}-text-${value} ${prefixCls}-transition ${prefixCls}-duration-${100} ${prefixCls}-ease-in  focus:${prefixCls}-outline-none  ${paddingCls}`;
   }
   return `${prefixCls}-rounded ${prefixCls}-bg-${value}-${500}  dark:${prefixCls}-bg-${value}-${500} hover:${prefixCls}-bg-${value}-${600} dark:hover:${prefixCls}-bg-${value}-${600} focus:${prefixCls}-bg-${value}-${600} dark:focus:${prefixCls}-bg-${value}-${600} ${prefixCls}-text-white dark:${prefixCls}-text-white ${prefixCls}-transition ${prefixCls}-duration-${100} ${prefixCls}-ease-in  focus:${prefixCls}-outline-none  ${paddingCls}`;
 }

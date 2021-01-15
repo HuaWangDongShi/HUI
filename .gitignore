@@ -24,3 +24,4 @@ coverage
 package-lock.json
 .npmrc
 storybook-static
+example
