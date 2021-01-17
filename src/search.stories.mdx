@@ -1,0 +1,40 @@
+import { Meta, Story, Props } from '@storybook/addon-docs/blocks';
+import HSearch from './components/HSearch.vue';
+
+![search](/public/undraw_design_components_9vy6.svg)
+
+<Meta title='HSearch' component={HSearch} />
+
+# HSearch
+
+This is **HSearch** component description
+
+<Story name='search' height='50px'>{{
+  data:function(){
+    return {
+        data:[{
+            text:'111',
+            status:2
+        }]
+    }
+  },
+  components: { HSearch },
+  template: '<h-search placeholder="helloworld" :searchChange="(val)=>{this.data.push(val)}" :dataSource="data"></h-search>'
+}}</Story>
+
+```
+data:function(){
+    return {
+        data:[{
+            text:'111',
+            status:2
+        }]
+    }
+  },
+<h-search placeholder="helloworld" :searchChange="(val)=>{this.data.push(val)}" :dataSource="data"></h-search>
+```
+
+
+## Props
+
+<Props of={HSearch} />

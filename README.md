@@ -1,4 +1,4 @@
-![avatar](./public/logo.png)
+![avatar](./public/huanet.jpg)
 # HUI
 
 An enterprise-class UI design language and Vue UI library.
